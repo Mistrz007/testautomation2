@@ -1,4 +1,4 @@
-package pl.mig.qa.api.frontend;
+package pl.mig.qa.frontend;
 
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;

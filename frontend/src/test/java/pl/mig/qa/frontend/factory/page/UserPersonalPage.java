@@ -1,13 +1,13 @@
-package pl.mig.page;
+package pl.mig.qa.frontend.factory.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class UserMainPage extends BasePage {
+public class UserPersonalPage extends BasePage{
 
-    public UserMainPage(WebDriver driver) {
+    public UserPersonalPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver,this);
     }
@@ -18,5 +18,7 @@ public class UserMainPage extends BasePage {
     @FindBy(css = "svg.gridicon.gridicons-visible")
     public WebElement privateButton;
 
+    @FindBy(css = "a[href=\"/me/notifications\"] span.menu-link-text")
+    public WebElement notyficationSetup;
 
 }

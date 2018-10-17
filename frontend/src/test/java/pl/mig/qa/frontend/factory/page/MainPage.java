@@ -1,4 +1,4 @@
-package pl.mig.page;
+package pl.mig.qa.frontend.factory.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

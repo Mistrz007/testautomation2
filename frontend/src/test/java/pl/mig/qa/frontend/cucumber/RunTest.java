@@ -1,8 +1,9 @@
-package pl.mig.qa.api.frontend.cucumber;
+package pl.mig.qa.frontend.cucumber;
 
-import org.junit.runner.RunWith;
-import cucumber.api.junit.Cucumber;
+
 import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(

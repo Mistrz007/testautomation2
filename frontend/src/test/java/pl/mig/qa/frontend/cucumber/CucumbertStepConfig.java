@@ -1,4 +1,4 @@
-package pl.mig.qa.api.frontend.cucumber;
+package pl.mig.qa.frontend.cucumber;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;

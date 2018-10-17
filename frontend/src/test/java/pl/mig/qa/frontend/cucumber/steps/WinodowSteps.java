@@ -1,4 +1,4 @@
-package pl.mig.qa.api.frontend.cucumber.steps;
+package pl.mig.qa.frontend.cucumber.steps;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -8,8 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pl.mig.qa.api.frontend.cucumber.CucumbertStepConfig;
-import pl.mig.qa.api.frontend.cucumber.page.DiaryTestPage;
+import pl.mig.qa.frontend.cucumber.CucumbertStepConfig;
+import pl.mig.qa.frontend.cucumber.page.DiaryTestPage;
 
 import java.util.Set;
 

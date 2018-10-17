@@ -1,23 +1,23 @@
-package pl.mig.page;
+package pl.mig.qa.frontend.factory.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginEmailPage extends BasePage {
+public class LoginPassPage extends BasePage {
 //    WebDriver driver;
 
-    public LoginEmailPage(WebDriver driver) {
+    public LoginPassPage(WebDriver driver) {
         super(driver);
 //        this.driver = driver;
         PageFactory.initElements(driver,this);
 
     }
 
-    @FindBy(id = "usernameOrEmail")
-    public WebElement loginEmail;
+    @FindBy(id = "password")
+    public WebElement loginPass;
 
     @FindBy(css = ".button.form-button.is-primary")
-    public WebElement emailContinueButton;
+    public WebElement passContinueButton;
 }
