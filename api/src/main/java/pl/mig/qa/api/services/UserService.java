@@ -6,6 +6,7 @@ import pl.mig.qa.api.model.MyUser;
 import pl.mig.qa.api.model.User;
 import pl.mig.qa.api.specyfications.Specifications;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class UserService {
@@ -29,7 +30,7 @@ public class UserService {
         return RestAssured.given()
                 .spec(Specifications.requestSpecBuilder())
                 .when()
-                .get("5a6a58222e0000d0377a7789")
+                .get(user_Patch)
                 .then()
                 .assertThat()
                 .statusCode(200)
@@ -47,5 +48,19 @@ public class UserService {
                 .extract()
                 .body()
                 .as(MyUser.class);
+    }
+
+
+    public static List<User> getUserResponseList(){
+        return Arrays.asList(RestAssured.given()
+                .spec(Specifications.requestSpecBuilder())
+                .when()
+                .get(user_Patch)
+                .then()
+                .assertThat()
+                .statusCode(200)
+                .extract()
+                .body()
+                .as(User[].class));
     }
 }
