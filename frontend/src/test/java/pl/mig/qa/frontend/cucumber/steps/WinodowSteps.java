@@ -66,6 +66,17 @@ public class WinodowSteps {
             }
         }
         driver.switchTo().window(secondTestWindowHandle);
+
+        new WebDriverWait(driver, 10)
+                .until(ExpectedConditions.visibilityOfElementLocated(By.id("testpagelink")));
+
+        driver.switchTo().window(secondTestWindowHandle).close();
+
+        driver.switchTo().window(firstPageWindowHandle);
+
+        (new WebDriverWait(driver, 10))
+                .until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Open page in a new window")));
+
         assertTrue( true);
     }
 }
