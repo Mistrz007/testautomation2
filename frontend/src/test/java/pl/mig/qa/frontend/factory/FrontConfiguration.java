@@ -1,4 +1,4 @@
-package pl.mif.qa.frontend.factory;
+package pl.mig.qa.frontend.factory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;

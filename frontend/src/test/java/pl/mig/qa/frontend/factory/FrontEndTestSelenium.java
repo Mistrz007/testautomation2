@@ -1,10 +1,8 @@
-package pl.mif.qa.frontend.factory;
+package pl.mig.qa.frontend.factory;
 
 import org.junit.jupiter.api.Test;
 import pl.mig.page.*;
 import pl.mig.qa.frontend.Configuration;
-
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
