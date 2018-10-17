@@ -57,9 +57,8 @@ public class CucumbertStepConfig {
         String verificationErrorString = verificationErrors.toString();
         if (!"".equals(verificationErrorString)) {
             fail(verificationErrorString);
+        }
             driver.quit();
             driver = null;
-            driver.close();
-        }
     }
 }
