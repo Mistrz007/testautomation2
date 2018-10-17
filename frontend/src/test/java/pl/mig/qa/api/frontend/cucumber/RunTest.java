@@ -1,4 +1,4 @@
-package pl.mig.qa.frontend.cucumber;
+package pl.mig.qa.api.frontend.cucumber;
 
 import org.junit.runner.RunWith;
 import cucumber.api.junit.Cucumber;
