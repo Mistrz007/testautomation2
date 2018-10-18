@@ -19,7 +19,7 @@ public class CucumbertStepConfig {
     private StringBuffer verificationErrors = new StringBuffer();
     public String id = "0";
 
-    @Before
+    //@Before
     public WebDriver setUp() {
         WebDriverManager.chromedriver().setup();
         System.out.println("================== @Before Frontend Cucumber =====================");
@@ -46,6 +46,7 @@ public class CucumbertStepConfig {
         if (!scenario.isFailed()) {
             status = "( ͡° ͜ʖ ͡°)";
 //            status = "++++++++++";
+            scenario.embed(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES), "images/png");
             scenario.write("Scenario passed");
         } else {
             status = "(✖╭╮✖)";
@@ -58,7 +59,7 @@ public class CucumbertStepConfig {
         if (!"".equals(verificationErrorString)) {
             fail(verificationErrorString);
         }
-            driver.quit();
-            driver = null;
+        driver.quit();
+        driver = null;
     }
 }

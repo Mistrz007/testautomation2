@@ -1,6 +1,7 @@
 package pl.mig.qa.api.services;
 
 import io.restassured.RestAssured;
+import io.restassured.authentication.AuthenticationScheme;
 import io.restassured.path.json.JsonPath;
 import pl.mig.qa.api.model.MyUser;
 import pl.mig.qa.api.model.User;
@@ -52,6 +53,7 @@ public class UserService {
 
 
     public static List<User> getUserResponseList(){
+
         return Arrays.asList(RestAssured.given()
                 .spec(Specifications.requestSpecBuilder())
                 .when()
