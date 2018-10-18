@@ -16,4 +16,22 @@ public class Specifications {
                     .setBasePath("v2/")
                 .build();
     }
+
+    public static RequestSpecification requestSpecBuilderAPIKEY(){
+        return new RequestSpecBuilder()
+                .addHeader("Authorise","Apikey, kalsdkjlkasjdalsdjljlk")
+                .setBaseUri(Configuration.URL)
+                .setContentType(ContentType.JSON)
+                .setBasePath("v2/")
+                .build();
+    }
+
+    public static RequestSpecification requestSpecBuilderUserAzure(){
+        return new RequestSpecBuilder()
+//                    .addHeader()
+                //.setBaseUri(Configuration.URL_AZURE)
+                .setBaseUri("http://fakerestapi.azurewebsites.net")
+                .setContentType(ContentType.JSON)
+                .build();
+    }
 }
