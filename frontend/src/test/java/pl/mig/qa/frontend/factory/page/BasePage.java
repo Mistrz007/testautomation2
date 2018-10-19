@@ -13,6 +13,11 @@ public class BasePage {
     }
 
     public void waitForVisibility(WebElement we ,int maxWaitTime){
+
+
+
+        // WebDriverWait klasa odpowiedzialna za to że czeka maxymalnie zadaną ilość czasu na wykonanie funkcji np na pokazanei sei elementu 10s potem wywali błąd, jak wykona sie szybciej to pojkdzie szybciej
+
         WebDriverWait wait = new WebDriverWait(driver,maxWaitTime);
         wait.until(ExpectedConditions.visibilityOf(we));
     }
