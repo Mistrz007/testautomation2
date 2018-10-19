@@ -68,6 +68,7 @@ public class FrontEndTestSelenium extends FrontConfiguration {
     @Test
     public void secondtFrontTest(){
 
+        //System.getenv()
         MainPage mainPage = new MainPage(driver);
 
         assertTrue(driver.getTitle().contains("WordPress.com"));

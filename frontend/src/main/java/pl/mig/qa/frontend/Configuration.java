@@ -9,6 +9,7 @@ public class Configuration {
     private static final String ENVIRONMENT = CONFIG.getString("environment");
     private static final Config ENV = CONFIG.getConfig("environments").getConfig(ENVIRONMENT);
 
+    public static final String REMOTE_URL = ENV.getString("remoteURL");
 
 
 
